@@ -19,7 +19,7 @@ class ScoreBoard:
         try:
             with open(filename, 'w', encoding='utf-8') as file:
                 file.write(f'Player has won {self.player_wins} times \n')
-                file.write(f'Bot has won {self.player_wins} times \n')
+                file.write(f'Bot has won {self.bot_wins} times \n')
                 file.write(f'Draws were recorded {self.draws} times \n')
         except IOError as e:
             print(f'Error was registered while saving a scoreboard file: {e}')
